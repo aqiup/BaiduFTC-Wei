@@ -82,5 +82,34 @@ task1
 <td>总计</td>
 <td>1000</td></tr>
 </table></p>
+<div id="signup">
+<h2>侧栏标题</h2>
+<h3>注册页面</h3>
+<form method="post" action="save.php">
+<label for="email">请输入邮箱地址：</label>
+<input type="email" name="email" id="email" placeholder="输入有效的邮箱格式">
+<label for="password1">请输入密码：</label>
+<input type="password" name="password1" id="password1" placeholder="密码为6-16位英文或数字">
+<label for="password2">请再次输入密码：</label>
+<input type="password" name="password2" id="password2">
+性别：<input type="radio" name="gender" value="nan" id="male"/>
+<label for="male">男</label>
+<input type="radio" name="gender" value="nv" id="female"/>
+<label for="female">女</label></form>
+城市：<select>
+<option value="suzhou">宿州</option>
+<option value="luan">六安</option>
+<option value="haikou">海口</option>
+<option value="tianjin">天津</option>
+<option value="renqiu" selected="selected">任丘</option>
+<option value="hefei">合肥</option>
+</select>
+爱好：<input type="checkbox" name="box1" value="chishi" id="chishi"><label for="chishi">吃屎</label>
+<input type="checkbox" name="box2" value="fanqiang" id="fanqiang"><label for="fanqiang">翻墙</label>
+<input type="checkbox" name="box3" value="baozha" id="baozha"><label for="baozha">爆炸</label>
+<input type="checkbox" name="box4" value="ganzhige" id="ganzhige"><label for="ganzhige">干志哥</label>
+个人描述：<textarea cols="30" rows="10" placeholder="请输入您的个人描述"></textarea>
+<input type="submit" name="submit" value="确认提交"/>
+</div>
 </body>
 </html>
