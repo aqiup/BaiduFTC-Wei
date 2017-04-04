@@ -6,9 +6,6 @@
 task2
 </title>
 <style type="text/css">
-*{
-
-}
 body{
 	background-color: gainsboro;
 }
@@ -21,6 +18,7 @@ h3{
 	font-size: 12px;
 }
 .article{
+	padding:10px 15px;
 	background-color: white;
 	border-right: 4px solid grey;
 	border-left: 2px solid lightgrey;
@@ -28,8 +26,29 @@ h3{
 	border-bottom: 4px solid grey;
 	margin: 20px;
 }
+.text{
+	text-indent: 2em;
+}
 #ontop{
 	background-color: #272727;
+}
+#ontop ul li{
+	list-style-type:disc;
+}
+.pic{
+	border: 1px solid lightgrey;
+	text-align: center;
+	width: 240px;
+	height: 200px;
+	margin: 30px 100px;
+	padding: 10px;
+}
+.pic img{
+	width: 200px;
+	height: 160px;
+}
+ul li{
+	list-style-type: none;
 }
 </style>
 </head>
@@ -49,11 +68,11 @@ h3{
 <p class="auti">
 文章作者 文章发表时间
 </p>
-<p>
+<p class="text">
 中新网3月29日电(张艾京)综合报道，按照计划，英国将于当地时间29日触发《里斯本条约》第50条，正式启动“脱欧”程序。就在英国准备离开欧盟之际，欧盟刚刚纪念了里程碑文件《罗马条约》签署60周年。</br>英国的离开，无疑将给欧盟的一体化进程带来深刻影响。而对于当下的英国来说，启动“脱欧”已经不仅仅是开始一场经济上的“分手”，在伦敦遭受恐怖袭击的背景下，“脱欧”后的英国要如何“自保”，也成为萦绕在英国人心头的一个严肃问题。
 </p>
 <img src="http://i.guancha.cn/news/2016/09/05/20160905073311330.jpg" title="梅姨"/>
-<p>
+<p class="text">
 我追问一下李明哲的事情，他的调查会持续多久，会不会通知他台湾的家人，或者是可以聘请律师吗？他人到底是在哪里，两岸会不会就此做协商？另外，因为李明哲的事件在台湾引起了很多的讨论，会让有些人担心，如果有人像他这样到大陆来，人身安全会不会受到一些影响或者是侵害，不知道是不是可以做些说明，让一些想要到大陆来的民众可以放心？谢谢。</br>首先我要澄清，来大陆从事正常活动的台湾同胞，他们的合法权益都是有保障的。大陆依法治国，我们不会对台湾同胞随意地采取人身限制措施，所以这点请<a href="http://ife.baidu.com" target="blank" title="连接到http://ife.baidu.com">台湾同胞</a>放心，来大陆，他们的基本权益是有充分保障的。李明哲的案子，因为涉嫌从事危害国家安全活动，对他的调查依司法程序在处理。</p>
 </div>
 <div class="article">
@@ -62,7 +81,7 @@ h3{
 <p class="auti">
 文章作者 文章发表时间
 </p>
-<p>
+<p class="text">
 中新网3月29日电(张艾京)综合报道，按照计划，英国将于当地时间29日触发《里斯本条约》第50条，正式启动“脱欧”程序。</br>就在英国准备离开欧盟之际，欧盟刚刚纪念了里程碑文件《罗马条约》签署60周年。</br>
 英国的离开，无疑将给欧盟的一体化进程带来深刻影响。而对于当下的英国来说，启动“脱欧”已经不仅仅是开始一场经济上的“分手”，在<a href="http://ife.baidu.com" title="连接到http://ife.baidu.com">伦敦</a>遭受恐怖袭击的背景下，“脱欧”后的英国要如何“自保”，也成为萦绕在英国人心头的一个严肃问题。
 </p>
@@ -75,15 +94,15 @@ h3{
 </div>
 <div class="article">
 <h2>图片</h2>
-<p>
+<div class="pic">
 好看的图片<img src="http://www.bz55.com/uploads/allimg/120810/1-120Q0092047.jpg" title="伦敦1"/>
-</p>
-<p>
+</div>
+<div class="pic">
 好看的图片<img src="http://image.tianjimedia.com/uploadImages/2013/183/NG83F757ZEF7.jpg" title="伦敦2"/>
-</p>
-<p>
+</div>
+<div class="pic">
 好看的图片<img src="http://image.tianjimedia.com/uploadImages/2012/220/T329WK310TU7.jpg" title="伦敦3"/>
-</p>
+</div>
 </div>
 <div class="article">
 <h2>最后一篇文章一级标题</h2>
@@ -121,7 +140,6 @@ h3{
 </div>
 <div class="article">
 <h2>侧栏标题</h2>
-<h3>注册页面</h3>
 <form method="post" action="save.php">
 <label for="email">请输入邮箱地址：</label>
 <input type="email" name="email" id="email" placeholder="输入有效的邮箱格式">
