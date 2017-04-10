@@ -18,7 +18,7 @@ h3{
 	font-size: 12px;
 }
 .article{
-	padding:10px 15px;
+	padding:10px 25px;
 	background-color: white;
 	border-right: 4px solid grey;
 	border-left: 2px solid lightgrey;
@@ -30,10 +30,29 @@ h3{
 	text-indent: 2em;
 }
 #ontop{
+	position: relative;
 	background-color: #272727;
 }
 #ontop ul li{
 	list-style-type:disc;
+}
+#bottomtitle{
+	border-left: 4px solid grey;
+	padding-left: 20px;
+	margin:20px 10px;
+	font-size: 25px;
+	font-weight: bold;
+	height: 45px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+.le{
+	position: absolute;
+	left: 100px;
+}
+.ri{
+	position: absolute;
+	right: 100px;
 }
 .pic{
 	border: 1px solid lightgrey;
@@ -41,7 +60,7 @@ h3{
 	width: 240px;
 	height: 200px;
 	margin: 30px 100px;
-	padding: 10px;
+	padding-left: 10px;
 }
 .pic img{
 	width: 200px;
@@ -54,13 +73,15 @@ ul li{
 </head>
 <body>
 <div id="ontop">
-<h1>网站一级标题</h1>
+<div class="le"><h1>网站一级标题</h1></div>
+<div class="ri">
 <ul>
 <li><a href="#" title="导航链接一">导航链接一</a></li>
 <li><a href="#" title="导航链接二">导航链接二</a></li>
 <li><a href="#" title="导航链接三">导航链接三</a></li>
 <li><a href="#" title="导航链接四">导航链接四</a></li>
 </ul>
+</div>
 </div>
 <div class="article">
 <h2>文章一级标题</h2>
@@ -139,7 +160,7 @@ ul li{
 </table></p>
 </div>
 <div class="article">
-<h2>侧栏标题</h2>
+<div id="bottomtitle">侧栏标题</div>
 <form method="post" action="save.php">
 <label for="email">请输入邮箱地址：</label>
 <input type="email" name="email" id="email" placeholder="输入有效的邮箱格式">
